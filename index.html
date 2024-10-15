@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background-color: lightpink;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-info {
+            display: flex;
+            padding: 20px;
+        }
+
+        .profile-photo {
+            flex: 1;
+            text-align: center;
+        }
+
+            .profile-photo img {
+                width: 150px;
+                border-radius: 50%;
+            }
+
+        .profile-details {
+            flex: 3;
+            padding-left: 20px;
+        }
+
+            .profile-details h2 {
+                margin: 0;
+            }
+
+        .nav {
+            background: #f0f2f5;
+            padding: 10px;
+            text-align: center;
+        }
+
+            .nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: #4267B2;
+            }
+
+        .content {
+            padding: 20px;
+        }
+
+        .post {
+            background: #f7f7f7;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MY PROFILE</h1>
+            <p></p>
+        </div>
+
+        <div class="profile-info">
+            <div class="profile-photo">
+                <img src="data:image/jpeg;base64,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" alt="Ảnh đại diện">
+            </div>
+            <div class="profile-details">
+                <h2>Quynh Nhu</h2>
+                <p>Giới thiệu bản thân</p>
+                <p>Email: email@example.com</p>
+                <p>Số điện thoại: 0123456789</p>
+            </div>
+        </div>
+
+        <div class="nav">
+            <a href="#">Trang cá nhân</a>
+            <a href="#">Bài viết</a>
+            <a href="#">Bạn bè</a>
+            <a href="#">Ảnh</a>
+        </div>
+
+        <div class="content">
+            <div class="post">
+                <h3>Bài viết đầu tiên</h3>
+                <p>Nội dung bài viết...</p>
+            </div>
+            <div class="post">
+                <h3>Bài viết thứ hai</h3>
+                <p>Nội dung bài viết...</p>
+            </div>
+            <div class="post">
+                <h3>Bài viết thứ ba</h3>
+                <p>Nội dung bài viết...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
